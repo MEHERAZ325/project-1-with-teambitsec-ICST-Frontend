@@ -1,0 +1,8 @@
+.Button{
+    width: 220px;
+    height: 34px;
+    color: #fff;
+    background-color: rgb(53, 53, 215);
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+}

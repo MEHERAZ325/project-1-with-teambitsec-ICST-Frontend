@@ -1,0 +1,38 @@
+.myBg{
+    background: linear-gradient(to right, white, lightgray);
+}
+.lists li{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(.9);
+   
+}
+.lists li:hover{
+   transform: scale(1);
+   transition: all 0.3s ease-out;
+}
+.lists li a{
+    text-decoration: none;
+    font-size: 14px;
+}
+.lists li a:hover{
+    text-decoration: underline;
+}
+.socolNotice{
+    border-radius: 10px;
+    transform: scale(.8);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 8px 0 rgba(21, 189, 226, 0.2);
+}
+.socolNotice:hover{
+    transform: scale(.9);
+    color: white;
+    background-color: rgb(49, 164, 189);
+}
+.textAnime li a{
+    height: 22px;
+    margin: 0;
+    padding: 0;
+}
