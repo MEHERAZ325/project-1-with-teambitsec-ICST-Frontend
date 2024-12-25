@@ -8,9 +8,9 @@ const Principal = () => {
     <Button name='অধ্যক্ষ'/>
     <img className='mt-1' src={Principal1} alt="" />
     <div className='text-area mt-2 items-center justify-center text-center text-black'>
-    <b><a style={{fontSize:"14px", fontWeight:"bold"}} title='মো: আরিফ আল মাহমুদ' href="">মো: আরিফ আল মাহমুদ</a></b><br />
-    <p style={{fontWeight:"500"}}>অধ্যক্ষ</p>
-    <p style={{fontSize:"15px", width:"100%"}}>ইনস্টিটিউট অব কম্পিউটার সায়েন্স এন্ড টেকনোলজি</p>
+    <b><a className='font-medium' title='মো: আরিফ আল মাহমুদ' href="">মো: আরিফ আল মাহমুদ</a></b><br />
+    <p className='font-bold text-gray-900'>অধ্যক্ষ</p>
+    <p className='w-full text-gray-700 mt-1 font-serif text-xs'>ইনস্টিটিউট অব কম্পিউটার সায়েন্স এন্ড টেকনোলজি</p>
     </div>
  </div>
   )

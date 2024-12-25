@@ -17,6 +17,7 @@
 .sticky{
     position: sticky;
     top: 0;
+    scroll-behavior: smooth;
     z-index: 1;
 }
 

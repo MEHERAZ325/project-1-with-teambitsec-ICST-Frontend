@@ -1,5 +1,5 @@
 .myBg{
-    background: linear-gradient(to right, white, lightgray);
+    /* background: linear-gradient(to right, white, lightgray); */
 }
 .lists li{
     background-color: aliceblue;
@@ -22,17 +22,12 @@
 }
 .socolNotice{
     border-radius: 10px;
-    transform: scale(.8);
+    width: 115px;
+    text-align: center;
+    font-size: 15px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 4px 4px 8px 0 rgba(21, 189, 226, 0.2);
 }
 .socolNotice:hover{
-    transform: scale(.9);
-    color: white;
-    background-color: rgb(49, 164, 189);
-}
-.textAnime li a{
-    height: 22px;
-    margin: 0;
-    padding: 0;
+    width: 120px;
+    text-align: center;
 }

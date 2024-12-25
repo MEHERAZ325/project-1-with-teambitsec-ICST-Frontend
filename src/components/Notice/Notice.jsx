@@ -4,30 +4,17 @@ import { Link } from 'react-router-dom'
 
 const Notice = () => {
   return (
-    <div className='relative'>
-        <div className='bg-[#e6e7e8] md:w-[720px] sm:w-[330px] top-4 items-center justify-center absolute'>
-        <h2 className='text-xl md:left-[350px] sm:left-[120px] absolute text-gray-600 font-bold'>নোটিশ  </h2>
-        <hr className='w-full h-9 bg-[#e6e7e8] '/>
-        <hr className='w-full'/>
-        <div>
-            <ul className='lists md:flex gap-3 sm:grid sm:grid-cols-1'>
-                <li className='ml-1'><Link href="/">ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং শিক্ষাক্রমের পরীক্ষার সময়সুচি-২০২২ <i>(০২-১২-২০২৪)</i></Link></li>
-                <li><Link href="/">ডিপ্লোমা -ইন -ইঞ্জিনিয়ারিং শিক্ষাক্রমের ৪র্থ পর্বের ফরম ফিলাপ এর তারিখ সমূহ <i>(২১-১১-২০২৪)</i></Link></li>
-                <li><Link href="/">ভর্তি চলছে (ICST) <i>(২১-১১-২০২৪)</i></Link></li>
-                <li><Link href="/">উপবৃত্তি সংক্রান্ত নোটিশ <i>(২১-১১-২০২৪)</i></Link></li>
-                <li className='mr-1'><Link href="/">ফরম ফিলাপ চলছে ২য়, ৪র্থ, ৬ষ্ঠ , ৮ম ও ৮ম অনিয়মিত পর্বের ফরম ফিলাপ এর তারিখ ১৭/১২/২০২২ইং তারিখ থেকে ২৪/১২/২০২২ইং তারিখ পর্যন্ত।<i>(২১-১১-২০২৪)</i></Link></li>
+    <div className='relative w-[720px] h-[266px] sm:h-[350px] sm:w-[328px] sm:h-  mt-5 bg-gradient-to-r from-gray-300 to-lightgray'>
+        <div className='md:w-[600px] sm:w-[330px] sm:p-4 top-4 left-[90px] items-center justify-center md:absolute'>
+        <h2 className='mt-2 mb-5 text-[21px]'>নোটিশ</h2>
+            <ul className=''>
+                <li className='text-[13px] mb-1'><i className="fa-solid fa-caret-right text-green-500 mt-1 mr-2"></i><Link title='ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং শিক্ষাক্রমের পরীক্ষার সময়সুচি-২০২২ (০২-১২-২০২৪)' className='border-b border-black border-dotted hover:border-solid' to="/">ডিপ্লোমা ইন টেক্সটাইল ইঞ্জিনিয়ারিং শিক্ষাক্রমের পরীক্ষার সময়সুচি-২০২২ <i className='text-gray-700'>(০২-১২-২০২৪)</i></Link></li>
+                <li className='text-[13px] mb-1'><i className="fa-solid fa-caret-right text-green-500 mt-1 mr-2"></i><Link title='ডিপ্লোমা -ইন -ইঞ্জিনিয়ারিং শিক্ষাক্রমের ৪র্থ পর্বের ফরম ফিলাপ এর তারিখ সমূহ (২১-১১-২০২৪)' className='border-b border-black border-dotted hover:border-solid' to="/">ডিপ্লোমা -ইন -ইঞ্জিনিয়ারিং শিক্ষাক্রমের ৪র্থ পর্বের ফরম ফিলাপ এর তারিখ সমূহ <i className='text-gray-700'>(২১-১১-২০২৪)</i></Link></li>
+                <li className='text-[13px] mb-1'><i className="fa-solid fa-caret-right text-green-500 mt-1 mr-2"></i><Link title='ভর্তি চলছে (ICST) (২১-১১-২০২৪)' className='border-b border-black border-dotted hover:border-solid' to="/">ভর্তি চলছে (ICST) <i className='text-gray-700'>(২১-১১-২০২৪)</i></Link></li>
+                <li className='text-[13px] mb-1 '><i className="fa-solid fa-caret-right text-green-500 mt-1 mr-2"></i><Link title='উপবৃত্তি সংক্রান্ত নোটিশ (২১-১১-২০২৪)' className='border-b border-black border-dotted hover:border-solid' to="/">উপবৃত্তি সংক্রান্ত নোটিশ <i className='text-gray-700'>(২১-১১-২০২৪)</i></Link></li>
+                <li className='text-[13px] mb-1 '><i className="fa-solid fa-caret-right text-green-500 mt-1 mr-2"></i><Link title='ফরম ফিলাপ চলছে ২য়, ৪র্থ, ৬ষ্ঠ , ৮ম ও ৮ম অনিয়মিত পর্বের ফরম ফিলাপ এর তারিখ ১৭/১২/২০২২ইং তারিখ থেকে ২৪/১২/২০২২ইং তারিখ পর্যন্ত।(২১-১১-২০২৪)' className='border-b border-black border-dotted hover:border-solid' to="/">ফরম ফিলাপ চলছে ২য়, ৪র্থ, ৬ষ্ঠ , ৮ম ও ৮ম অনিয়মিত পর্বের ফরম ফিলাপ এর তারিখ ১৭/১২/২০২২ইং তারিখ থেকে ২৪/১২/২০২২ইং তারিখ পর্যন্ত।<i className='text-gray-700'>(২১-১১-২০২৪)</i></Link></li>
+            <Link className='socolNotice bg-[#d6dadf] hover:bg-[#848284] text-center text-black p-3 right-0 mt-1 text-sm absolute' title='সকল নোটিশ' to="/">সকল নোটিশ</Link>
             </ul>
-            <a className='socolNotice bg-[#e6e7e8] text-black p-3 right-0 mt-1 absolute' title='সকল নোটিশ' href="#">সকল নোটিশ</a>
-            <div className='mt-[80px] bg-white'>
-                <div className='bg-[#383e44] w-[100%] h-[50px]'>
-                    <ul className=''>
-                        {/* <marquee behavior="" direction=""></marquee> */} 
-                        
-                        {/* here we write marqueee text animation */}
-                    </ul>
-                </div>
-            </div>
-        </div>
     </div>
     </div>
   )

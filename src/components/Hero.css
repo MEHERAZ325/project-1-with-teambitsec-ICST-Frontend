@@ -1,4 +1,4 @@
-.links{
+/* .links{
     font-size: 15px;
 }
 .links li{
@@ -8,17 +8,19 @@
 }
 
 .links li a{
-    color: rgb(11, 39, 161);
+    color: #a6a6a6;
 }
 .links li a:hover{
     color: rgb(2, 43, 58);
     transition: all 0.2s ease-in;
+    text-decoration: underline;
+    
 }
 .links li i{
-    background-color: rgb(10, 54, 10);
+    background-color: rgb(61, 156, 61);
     color: white;
     border-radius: 50%;
     padding: 5px;
     font-size: 9px;
     list-style-position: outside;
-}
+} */
