@@ -17,6 +17,7 @@ import { Link } from 'react-router-dom'
 import Sidebar from './Sidebar/Sidebar'
 import Notice from './Notice/Notice'
 import Card from './Cards/Card'
+import VideoGallery from './VideoSection/VideoGallery'
 
 const Hero = () => {
   return (
@@ -148,6 +149,9 @@ const Hero = () => {
           </div>
         </div>
 
+       <div className='w-[100%]'>
+       <VideoGallery/>
+       </div>
         </div>
        </div>
        {/* end */}
