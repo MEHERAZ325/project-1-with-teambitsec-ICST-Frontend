@@ -7,7 +7,10 @@ const Navbar = () => {
   
   return (
     <div className='navber sticky sm:mb-2 sm:bg-sky-200 shadow-2xl mt-4'>
-        <FaBars style={{color:"gray"}} title='মেনু নির্বাচন করুন' className='relative right-0 text-purple-50 text-2xl lg:hidden cursor-pointer'/>
+        <div className='items-start sm:flex lg:hidden'>
+        <FaBars title='মেনু নির্বাচন করুন' className='relative sm:mr-[50px] md:mr-[400px] text-2xl cursor-pointer'/>
+        <Link to='/'>মেনু নির্বাচন করুন</Link>
+        </div>
       <ul className='  relative sm:hidden lg:block'>
         <li className='group text-[#ffa518] bg-white hover:bg-[#ffa518] hover:text-white duration-200 ease-linear'><Link to="/">ক্যাম্পাস</Link>
         <ul className='absolute hidden group-hover:block z-1 top-[26px] left-[-50px] w-[300px] flex-col'>

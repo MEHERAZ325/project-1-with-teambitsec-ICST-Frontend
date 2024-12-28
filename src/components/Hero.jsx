@@ -11,6 +11,7 @@ import Imgg8 from '../images/CardImgage/gallery-44-267592.png'
 import Imgg9 from '../images/CardImgage/notice&download.png'
 import Imgg10 from '../images/CardImgage/course-list.png'
 
+
 import Button from './Button/Button'
 import '../components/Hero.css'
 import { Link } from 'react-router-dom'
@@ -18,24 +19,26 @@ import Sidebar from './Sidebar/Sidebar'
 import Notice from './Notice/Notice'
 import Card from './Cards/Card'
 import VideoGallery from './VideoSection/VideoGallery'
+import Footer from './Footer/Footer'
 
+// this container class import from App.css
 const Hero = () => {
   return (
-    <div className='container w-[100%]  shadow-2xl flex order-1'>
+    <div className='container w-[100%] flex order-1'>
         {/* start */}
-       <div className='w-[720px] sm:[330px] mr-3 relative'>
+       <div className='w-[720px] sm:[330px] mt-4 mr-3 relative'>
         <div className='w-full absolute shadow-xl'>
         <a href="#">
             <img src={Img} className='w-[720px] sm:w-full h-[380px]' alt="" />
         </a>
-       <div className='md:w-[720px] mt-5 sm:w-[330px] h-[50px] bg-[#cbcccd] justify-center text-[#666666]'>
+       <div className='sm:w-[310px] md:w-[720px] mt-5  h-[50px] bg-[#cbcccd] justify-center text-[#666666]'>
        <marquee style={{marginTop:"10px", fontSize:"20px", fontWeight: "bold"}} title='***৪ বছর মেয়াদী ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং কোর্সে ২৩  তম ব্যাচে সরকারি বৃত্তির সুবিধাসহ  ভর্তি চলছে |'  behavior="scroll" direction="left">
        ***৪ বছর মেয়াদী ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং কোর্সে ২৩  তম ব্যাচে সরকারি বৃত্তির সুবিধাসহ  ভর্তি চলছে |
         </marquee>
        </div>
         <Notice/>
 
-        <div className='md:mt-[0px] sm:mt-[-200px] w-full justify-center gap-3 h-[156px] flex sm:flex-col md:flex-row'>
+        <div className='sm:mt-[-200px] w-full justify-center md:mt-[100px] gap-5 h-[156px] flex sm:flex-col md:flex-row'>
           <div className='w-[347px] h-full sm:grid sm:grid-cols-1'>
             <Card h4="ক্যাম্পাস"
             Image={Imgg1}
@@ -60,7 +63,7 @@ const Hero = () => {
         </div>
         {/* {row 1 end} */}
 
-        <div className='mt-2 w-full justify-center gap-3 h-[156px] flex sm:flex-col md:flex-row'>
+        <div className='w-full justify-center mt-5 gap-5 h-[156px] flex sm:flex-col md:flex-row'>
           <div className='w-[347px] h-full sm:grid-cols-1'>
             <Card h4="প্রশাসন"
             Image={Imgg3}
@@ -84,7 +87,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='mt-2 w-full justify-center gap-3 h-[156px] flex sm:flex-col md:flex-row'>
+        <div className='w-full justify-center mt-5 gap-5 h-[156px] flex sm:flex-col md:flex-row'>
           <div className='w-[347px] h-full sm:grid-cols-1'>
             <Card h4="শিক্ষার্থী"
             Image={Imgg5}
@@ -105,7 +108,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='mt-2 w-full justify-center gap-3 h-[156px] flex sm:flex-col md:flex-row'>
+        <div className='w-full justify-center mt-5 gap-5 h-[156px] flex sm:flex-col md:flex-row'>
           <div className='w-[347px] h-full sm:grid-cols-1'>
             <Card h4="রিসোর্স"
             Image={Imgg7}
@@ -126,7 +129,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='mt-2 w-full justify-center gap-3 h-[156px] flex sm:flex-col md:flex-row'>
+        <div className='w-full justify-center mt-5 gap-5 h-[156px] flex sm:flex-col md:flex-row'>
           <div className='w-[347px] h-full sm:grid-cols-1'>
             <Card h4="নোটিশ"
             Image={Imgg9}
@@ -152,12 +155,23 @@ const Hero = () => {
        <div className='w-[100%]'>
        <VideoGallery/>
        </div>
+
+       <div className='sm:w-[220px] lg:hidden'>
+       <Sidebar/>
+       </div>
+
+       <div className='w-100% h-f'>
+       <Footer/>
+       </div>
+
         </div>
        </div>
        {/* end */}
 
        {/* Sidebar start */}
-        <Sidebar/>
+       <div className='mt-4 w-[220px] sm:hidden lg:block flex-col'>
+       <Sidebar/>
+       </div>
        {/* Sidebar end */}
   
     </div>

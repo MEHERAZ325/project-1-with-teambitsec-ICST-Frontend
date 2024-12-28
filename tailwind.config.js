@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '350px', // Custom breakpoint
+        'sm': '320px', // Custom breakpoint
       },
       backgroundImage: {
         'black-deepblue': 'linear-gradient(135deg, #000000, #000080)',

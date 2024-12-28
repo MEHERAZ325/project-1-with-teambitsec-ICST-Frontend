@@ -8,7 +8,7 @@ const MyGovt = () => {
        <Button name="আমার সরকার"/>
        <div className='w-[140px] h-[110px]'>
        <a href="https://www.mygov.bd/">
-        <img className="w-[180px] ml-[40px] mr-[40px] mt-5" src={GovtImg} alt="" />
+        <img className="w-[180px] sm:ml-[80px] md:ml-[120px] mr-[40px] mt-5 lg:ml-8" src={GovtImg} alt="" />
        </a>
        </div>
   </div>

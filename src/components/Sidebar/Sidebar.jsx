@@ -12,7 +12,7 @@ import Location from './SidebarComponents/Location'
 
 const Sidebar = () => {
   return (
-    <div className='w-[220px] sm:hidden lg:block flex-col shadow-lg'>
+    <div>
       <Principal/>
       <ICST/>
       <ImportantLink/>

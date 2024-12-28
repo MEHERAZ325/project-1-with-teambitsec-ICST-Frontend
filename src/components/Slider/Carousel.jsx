@@ -10,7 +10,7 @@ const Carousel = () => {
   useEffect(() => {
    timeOut = autoPlay && setTimeout(() => {
       slideRight();
-    }, 2500)
+    }, 1500)
   })
 
   const slideRight = () => {
@@ -23,7 +23,7 @@ const Carousel = () => {
   return (
 
     <div onMouseEnter={() => {setAutoPlay(false); clearTimeout(timeOut)}} onMouseLeave={() => {setAutoPlay(true)}} className='carousel max-w-[960px] h-[333px] w-full mt-4 flex'>
-      <div className='slide w-full h-full relative flex shadow-xl'>
+      <div className='slide md:w-[960px] h-full sm:w-[330px] relative flex shadow-xl'>
         {
           sliderImg.map((images, index) => {
             return (
@@ -32,8 +32,8 @@ const Carousel = () => {
               </div>
             )
           })}
-          <div onClick={slideLeft} className="carousel_arrow_left">&lsaquo;</div>
-          <div onClick={slideRight} className="carousel_arrow_right">&rsaquo;</div>
+          <div onClick={slideLeft} className="absolute left-[15px] text-[40px] top-1/2 transform -translate-y-1/2 bg-[#272323] text-white flex justify-center items-center w-7 h-7 rounded-full pb-[7px] cursor-pointer">&lsaquo;</div>
+          <div onClick={slideRight} className="absolute right-[15px] text-[40px] top-1/2 transform -translate-y-1/2 bg-[#272323] text-white flex justify-center items-center w-7 h-7 rounded-full pb-[7px] cursor-pointer">&rsaquo;</div>
           <div className="carousel_pagination">
              {sliderImg.map((_, index) => {
               return(

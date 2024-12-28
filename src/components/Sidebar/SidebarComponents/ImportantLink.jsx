@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const ImportantLink = () => {
   return (
-    <div className='w-[220px] h-[452px] mt-4'>
+    <div className='sm:w-[220px] md:w-[300px] lg:w-[220px] h-[452px] mt-4'>
     <Button name='গুরুত্বপূর্ণ লিঙ্ক'/>
     <ul className='links mt-2'>
       

@@ -4,10 +4,10 @@ import Helpline from '../../images/slide/helphotline.jpg'
 
 const Hotline = () => {
   return (
-    <div className='w-[220px] h-[461px]'>
+    <div className='w-[220px] sm:mt-9 h-[461px] md:ml-[350px] lg:ml-0'>
    <Button name='জরুরি হটলাইন'/>
    <div className='mt-2'>
-       <div><img src={Helpline} alt="" /></div>
+       <div><img className='sm:ml-[50px] md:ml-[70px] lg:ml-0' src={Helpline} alt="" /></div>
    </div>
   </div>
   )
