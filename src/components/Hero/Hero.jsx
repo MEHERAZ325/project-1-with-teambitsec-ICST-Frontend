@@ -1,32 +1,29 @@
 import React from 'react'
-import Img from '../images/slide/image6.jpeg'
-import Imgg1 from '../images/CardImgage/campus.png'
-import Imgg2 from '../images/CardImgage/admission512x512.png'
-import Imgg3 from '../images/CardImgage/scholarship.png'
-import Imgg4 from '../images/CardImgage/academic_paper.png'
-import Imgg5 from '../images/CardImgage/Examination_ex.png'
-import Imgg6 from '../images/CardImgage/GPA-512.png'
-import Imgg7 from '../images/CardImgage/resources-.png'
-import Imgg8 from '../images/CardImgage/gallery-44-267592.png'
-import Imgg9 from '../images/CardImgage/notice&download.png'
-import Imgg10 from '../images/CardImgage/course-list.png'
+import './Hero'
+import Img from '../../images/slide/image6.jpeg'
+import Imgg1 from '../../images/CardImgage/campus.png'
+import Imgg2 from '../../images/CardImgage/admission512x512.png'
+import Imgg3 from '../../images/CardImgage/scholarship.png'
+import Imgg4 from '../../images/CardImgage/academic_paper.png'
+import Imgg5 from '../../images/CardImgage/Examination_ex.png'
+import Imgg6 from '../../images/CardImgage/GPA-512.png'
+import Imgg7 from '../../images/CardImgage/resources-.png'
+import Imgg8 from '../../images/CardImgage/gallery-44-267592.png'
+import Imgg9 from '../../images/CardImgage/notice&download.png'
+import Imgg10 from '../../images/CardImgage/course-list.png'
 
-
-import Button from './Button/Button'
-import '../components/Hero.css'
 import { Link } from 'react-router-dom'
-import Sidebar from './Sidebar/Sidebar'
-import Notice from './Notice/Notice'
-import Card from './Cards/Card'
-import VideoGallery from './VideoSection/VideoGallery'
-import Footer from './Footer/Footer'
+import Sidebar from '../Sidebar/Sidebar'
+import NoticeBoard from '../../components/NoticeComponent/NoticeBoard'
+import Card from '../Cards/Card'
+import VideoGallery from '../VideoSection/VideoGallery'
 
 // this container class import from App.css
 const Hero = () => {
   return (
-    <div className='container w-[100%] flex order-1'>
+    <div className=' sm:justify-center w-[100%] flex order-1'>
         {/* start */}
-       <div className='w-[720px] sm:[330px] mt-4 mr-3 relative'>
+       <div className='sm:w-[330px] md:w-[720px] mt-4 mr-3 relative'>
         <div className='w-full absolute shadow-xl'>
         <a href="#">
             <img src={Img} className='w-[720px] sm:w-full h-[380px]' alt="" />
@@ -36,7 +33,8 @@ const Hero = () => {
        ***৪ বছর মেয়াদী ডিপ্লোমা-ইন-ইঞ্জিনিয়ারিং কোর্সে ২৩  তম ব্যাচে সরকারি বৃত্তির সুবিধাসহ  ভর্তি চলছে |
         </marquee>
        </div>
-        <Notice/>
+
+        <NoticeBoard/>
 
         <div className='sm:mt-[-200px] w-full justify-center md:mt-[100px] gap-5 h-[156px] flex sm:flex-col md:flex-row'>
           <div className='w-[347px] h-full sm:grid sm:grid-cols-1'>
@@ -159,11 +157,6 @@ const Hero = () => {
        <div className='sm:w-[220px] lg:hidden'>
        <Sidebar/>
        </div>
-
-       <div className='w-100% h-f'>
-       <Footer/>
-       </div>
-
         </div>
        </div>
        {/* end */}

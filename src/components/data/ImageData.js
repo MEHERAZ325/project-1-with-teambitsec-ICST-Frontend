@@ -1,9 +1,9 @@
-import Image1 from '../images/slide/image1.jpg'
-import Image2 from '../images/slide/image2.jpg'
-import Image3 from '../images/slide/image3.jpg'
-import Image4 from '../images/slide/image4.jpg'
-import Image5 from '../images/slide/image5.jpg'
-import Image6 from '../images/slide/image6.jpeg'
+import Image1 from '../../images/slide/image1.jpg'
+import Image2 from '../../images/slide/image2.jpg'
+import Image3 from '../../images/slide/image3.jpg'
+import Image4 from '../../images/slide/image4.jpg'
+import Image5 from '../../images/slide/image5.jpg'
+import Image6 from '../../images/slide/image6.jpeg'
 
 
 const sliderImg = [

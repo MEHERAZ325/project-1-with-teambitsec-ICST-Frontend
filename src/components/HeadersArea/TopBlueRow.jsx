@@ -8,8 +8,9 @@ import { Link } from 'react-router-dom';
 
 const TopBlueRow = () => {
   return (
-    <div className='bg-[#0e91e7] max-w-[960px] w-full h-[40px] mt-4 truncate flex items-center justify-between shadow-xl'>
-       <div className="contact flex justify-between items-center mb-1">
+    <div className='w-full sm:w-[330px] md:w-[720px] lg:w-[960px]  max-w-[960px] mx-auto bg-[#32758b] px-3'>
+      <div className='flex justify-between items-center'>
+      <div className="flex justify-between">
        <div className='flex items-center'>
         <IoMdMail className='text-white text-2xl md:mt-1 sm:mt-0 sm:ml-1 sm:mr-1 sm:text-[20px] md:font-extrabold md:text[24px]'/>
         <Link className='text-white text-[10px] md:text-[15px] ml-1  font-arial ' to="#">icst69016@gmail.com <span className='sm:text-[12px] md:text-[20px] items-center sm:ml-1'>|</span> </Link>
@@ -20,7 +21,7 @@ const TopBlueRow = () => {
         </div>
        </div>
        {/* contact end */}
-    <div className='social-links flex justify-between gap-3 sm:gap-2 sm:mr-1'>
+    <div className='social-links flex gap-3'>
      <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">
      <FaFacebook className='text-white sm:text-[15px] md:text-[20px]'/>
      </a>
@@ -31,6 +32,7 @@ const TopBlueRow = () => {
      <FaLinkedinIn className='text-white sm:text-[15px] md:text-[20px] '/>
      </a>
     </div>
+      </div>
     </div>
   )
 }

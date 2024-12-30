@@ -6,7 +6,7 @@ import { FaBars } from "react-icons/fa";
 const Navbar = () => {
   
   return (
-    <div className='navber sticky sm:mb-2 sm:bg-sky-200 shadow-2xl mt-4'>
+    <div className='navber sticky sm:mb-2 sm:bg-sky-200  shadow-2xl mt-4'>
         <div className='items-start sm:flex lg:hidden'>
         <FaBars title='মেনু নির্বাচন করুন' className='relative sm:mr-[50px] md:mr-[400px] text-2xl cursor-pointer'/>
         <Link to='/'>মেনু নির্বাচন করুন</Link>

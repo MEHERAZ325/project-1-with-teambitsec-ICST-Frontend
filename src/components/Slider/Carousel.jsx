@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Carousel.css'
-import sliderImg from '../ImageData.js'
+import sliderImg from '../data/ImageData.js'
 
 const Carousel = () => {
   const [current, setCurrent] = useState(0);
@@ -22,8 +22,8 @@ const Carousel = () => {
   }
   return (
 
-    <div onMouseEnter={() => {setAutoPlay(false); clearTimeout(timeOut)}} onMouseLeave={() => {setAutoPlay(true)}} className='carousel max-w-[960px] h-[333px] w-full mt-4 flex'>
-      <div className='slide md:w-[960px] h-full sm:w-[330px] relative flex shadow-xl'>
+    <div onMouseEnter={() => {setAutoPlay(false); clearTimeout(timeOut)}} onMouseLeave={() => {setAutoPlay(true)}} className='w-full sm:justify-center h-[333px]  mt-4 flex'>
+      <div className='sm:w-[330px] md:w-[720px] lg:w-[960px] h-full justify-center relative flex shadow-xl'>
         {
           sliderImg.map((images, index) => {
             return (

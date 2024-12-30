@@ -1,13 +1,43 @@
-// import { StrictMode } from 'react'
-// import { BrowserRouter } from 'react-dom/client'
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
 import './index.css'
-import App from './App.jsx'
+import ErrorPage from './foundation/ErrorPage.jsx';
+import Home from './Pages/Home.jsx';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom"
+import { StrictMode } from 'react';
+import Root from './foundation/Root.jsx';
+import Notice from './Pages/Notice.jsx';
+import NoticeList from './components/NoticeComponent/NoticeList.jsx';
+import CommingSoon from './foundation/CommingSoon.jsx'
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Root />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "notice",
+        element: <NoticeList />,
+      },
+      {
+        path: "comming-soon",
+        element: <CommingSoon />,
+      },
+      
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
 );

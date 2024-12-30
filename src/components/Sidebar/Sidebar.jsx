@@ -1,6 +1,4 @@
 import React from 'react'
-import Button from '../Button/Button'
-import { Link } from 'react-router-dom'
 import ImportantLink from './SidebarComponents/ImportantLink'
 import Principal from './SidebarComponents/Principal'
 import ICST from './ICST'
@@ -12,7 +10,7 @@ import Location from './SidebarComponents/Location'
 
 const Sidebar = () => {
   return (
-    <div>
+    <div className='mt-[-50px]'>
       <Principal/>
       <ICST/>
       <ImportantLink/>
