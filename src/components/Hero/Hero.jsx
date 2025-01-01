@@ -23,8 +23,8 @@ const Hero = () => {
   return (
     <div className=' sm:justify-center w-[100%] flex order-1'>
         {/* start */}
-       <div className='sm:w-[330px] md:w-[720px] mt-4 mr-3 relative'>
-        <div className='w-full absolute shadow-xl'>
+       <div className='sm:w-[330px] md:w-[720px] mt-4 mr-3 '>
+        <div className='w-full  shadow-xl'>
         <a href="#">
             <img src={Img} className='w-[720px] sm:w-full h-[380px]' alt="" />
         </a>

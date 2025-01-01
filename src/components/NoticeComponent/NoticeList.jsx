@@ -12,8 +12,8 @@ import { Link } from 'react-router-dom'
 import Pagination from './Pagination'
 
 const NoticeList = () => {
-  const [page, setPage] = useState(3);
-  const [limit, setLimit] = useState(5);
+  const [page, setPage] = useState(1);
+  const [limit, setLimit] = useState(25);
   const users = getUsers(page, limit);
   let totalPage = Math.ceil(getLength() / limit);
   let pageNo;
@@ -58,9 +58,9 @@ const NoticeList = () => {
     aria-label="Default select example" 
     id=""
   >
-    <option value="5">5</option>
-    <option value="10">10</option>
-    <option value="30">30</option>
+    <option value="25">25</option>
+    <option value="20">50</option>
+    <option value="30">100</option>
   </select>
             <p className='ml-1'>entries</p>
           </label>
@@ -104,7 +104,6 @@ const NoticeList = () => {
        <Principal/>
         <ICST/>
         <ImportantLink/>
-
        </div>
       </div>
     </div>

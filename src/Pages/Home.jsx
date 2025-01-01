@@ -5,7 +5,7 @@ import Footer from '../components/Footer/Footer.jsx'
 
 const Home = () => {
   return (
-    <div>
+    <div className='flex-col'>
     <Header/>
     <Hero/>
     <Footer/>

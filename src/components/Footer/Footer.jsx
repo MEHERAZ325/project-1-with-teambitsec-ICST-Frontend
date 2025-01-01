@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
    <>
-      <div className='w-full sm:w-[330px] md:w-[720px] lg:w-[960px] max-w-[960px] mx-auto bg-[#e6e5e5] p-3 mt-3'>
+      <div className='w-full sm:w-[330px] md:w-[720px] lg:w-[960px] max-w-[960px] mx-auto bg-[#e6e5e5] p-3 mt-3 z-[999]'>
        <div className='flex justify-between items-center'>
        <div>
             <h4 className='text-sm mb-1 sm:mb-0 sm:text-xs text-[#4a4646] font-bold'>ইনস্টিটিউট অব কম্পিউটার সায়েন্স এন্ড টেকনোলজি</h4>
